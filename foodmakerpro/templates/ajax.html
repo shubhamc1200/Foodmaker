@@ -1,0 +1,8 @@
+$.ajax({
+       url: '/update_new_lat_long/',
+       data: { lat: position.coords.latitude,'lng': position.coords.longitude,'csrfmiddlewaretoken': '{{ csrf_token }}'},
+       type: 'POST'
+     }).done(function(response){
+       console.log(response);
+     });
+    }
