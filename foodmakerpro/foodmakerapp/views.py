@@ -4,6 +4,8 @@ from django.http import HttpResponse
 from django.contrib.auth.forms import UserCreationForm
 # Create your views here.
 
+
+
 def getuserIp(request):
     Lat_Long1=Lat_Long.objects.all()
     return render(request,'first_page_map.html',{'Lat_Long1':Lat_Long1})
